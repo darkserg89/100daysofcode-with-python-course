@@ -37,11 +37,11 @@ def game_loop(player1, player2, rolls):
 
         count += 1
     if player1.count>player2.count:
-        print("{} is a winner".format(player1.name))
+        print("{} is a winner. The SCORE IS: ---{}:{}---".format(player1.name,player1.count,player2.count))
     elif player2.count<player2.count:
-        print("{} is a winner".format(player2.name))
+        print("{} is a winner. The SCORE IS: ---{}:{}---".format(player2.name,player1.count,player2.count))
     else:
-        print('Nobody won, ITS a DRAW!!! the SCORE IS: ---{}:{}---'.format(player1.count,player2.count))
+        print('Nobody won, ITS a DRAW!!! The SCORE IS: ---{}:{}---'.format(player1.count,player2.count))
     # Compute who won
 
 
